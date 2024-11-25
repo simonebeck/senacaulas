@@ -1,0 +1,45 @@
+algoritmo "Bhaskara"
+// Função :
+// Autor :
+// Data : 25/11/2024
+// Seção de Declarações 
+var
+   a, b, c, xm, xn, d, r, dn: Real
+
+inicio
+// Seção de Comandos 
+   Escreval("Digite o valor de a: ")
+   Leia (a)
+   Escreval
+   Escreval(" Digite o valor de b: ")
+   Leia (b)
+   Escreval
+   Escreval(" Digite o valor de c: ")
+   Leia (c)
+   Escreval
+   d<-( (b*b)- (4*a*c))
+   Escreval
+   Escreval("Delta: ",d)
+   Escreval
+   se d<0 entao
+      dn <- -(d)
+      d <- dn
+      r <- RaizQ(d)
+      Escreval("Raiz de Delta: ", r)
+      xm <- ((-b + (r)) / (2*a))
+      Escreval
+      Escreval("O valor de X' é: ",xm, "!")
+      Escreval
+      xn <- ((-b - (r)) / (2*a))
+      Escreval ("O valor de x'' é: ",xn, "!")
+   senao
+      r <- RaizQ(d)
+      Escreval(" Raiz de Delta: ",r)
+      Escreval
+      xm <- ((-b + (r)) / (2*a))
+      Escreval("O valor de X' é: ",xm)
+      Escreval
+      xn <-((-b - (r)) / (2*a))
+      Escreval("O valor de x'' é: ",xn)
+fimse
+fimalgoritmo
